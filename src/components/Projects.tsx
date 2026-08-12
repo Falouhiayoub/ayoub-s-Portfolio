@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { 
-  ExternalLink, X, Sparkles, Shield, Zap, TrendingUp, 
+  X, Sparkles, 
   MapPin, ShoppingBag, Car, ShieldAlert, CheckCircle2, ArrowRight
 } from "lucide-react";
 
@@ -40,8 +40,8 @@ const PROJECTS: Project[] = [
       "Animated dashboards & store sales statistics"
     ],
     tech: ["React.js", "Redux Toolkit", "Gemini AI", "n8n", "Tailwind CSS", "MockAPI", "Jest"],
-    demoUrl: "https://demo.example.com/fashion-fuel",
-    githubUrl: "https://github.com/example/fashion-fuel",
+    demoUrl: "https://project-fil-rouge-github.vercel.app/",
+    githubUrl: "https://github.com/Falouhiayoub/project-fil-rouge-github",
     stats: [
       { label: "AI Parsing Speed", value: "<150ms" },
       { label: "State Hydration", value: "3ms" },
@@ -92,7 +92,7 @@ const PROJECTS: Project[] = [
     ],
     tech: ["Node.js", "Express.js", "MongoDB", "n8n", "WebSockets", "Jest", "Docker"],
     demoUrl: "https://demo.example.com/sos-ksar",
-    githubUrl: "https://github.com/example/sos-ksar",
+    githubUrl: "https://github.com/Falouhiayoub/Sos-ksar",
     stats: [
       { label: "WebSocket Sync", value: "4ms" },
       { label: "Dispatch Accuracy", value: "99.8%" },
@@ -119,7 +119,7 @@ export default function Projects() {
           <div className="my-auto space-y-1">
             <div className="flex gap-2 items-center bg-[#00E5FF]/5 p-1 rounded border border-[#00E5FF]/10">
               <ShoppingBag className="w-3 h-3 text-[#00E5FF]" />
-              <span>Parsed: "Linen Bomber Jacket"</span>
+              <span>Parsed: &quot;Linen Bomber Jacket&quot;</span>
             </div>
             <div className="flex justify-between items-center text-[8px] text-muted">
               <span>Confidence: 98.4%</span>
@@ -162,7 +162,7 @@ export default function Projects() {
           {/* Mock card input code highlight */}
           <div className="bg-[#7C4DFF]/5 border border-[#7C4DFF]/15 rounded p-2 text-[8px] text-muted">
             <span className="text-[#8AFBFF]">await</span> stripe.paymentIntents.create(&#123; <br />
-            &nbsp;&nbsp;amount: 8500, currency: 'usd'<br />
+            &nbsp;&nbsp;amount: 8500, currency: &apos;usd&apos;<br />
             &#125;);
           </div>
         </div>
@@ -384,15 +384,6 @@ export default function Projects() {
                     <span>View Repository</span>
                   </a>
 
-                  <a
-                    href={selectedProject.demoUrl}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="flex items-center gap-2 bg-primary text-[#050816] font-bold text-xs px-5 py-3 rounded-lg hover:shadow-[0_0_15px_rgba(0,229,255,0.4)] transition-all"
-                  >
-                    <ExternalLink className="w-4 h-4" />
-                    <span>Launch Live Demo</span>
-                  </a>
                 </div>
 
               </motion.div>
