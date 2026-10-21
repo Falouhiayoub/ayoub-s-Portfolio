@@ -100,7 +100,7 @@ export default function Hero() {
             </button>
 
             <a
-              href="/ayoub%20falouhi%20CV%20(1).pdf.pdf"
+              href="/ayoub%20falouhi%20CV%20(3).pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="group flex items-center gap-2 text-muted hover:text-white font-medium px-4 py-3.5 rounded-lg transition-colors cursor-pointer"
